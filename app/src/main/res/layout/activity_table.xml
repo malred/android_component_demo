@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:context=".Table">
+    <!--
+          android:stretchColumns="3" -> 对应列的元素可以伸展占据剩余空间
+          可以用逗号分割,指定多个
+      -->
+    <!--
+    表格布局不指定宽高,则控件和父容器等宽
+    如果想让控件出现在同一行,则要在控件外层加一个tableRow
+      -->
+    <EditText />
+
+    <TableRow>
+        <!-- tablerow里的控件默认wrap_content -->
+        <Button android:text="7" />
+
+        <Button android:text="8" />
+
+        <Button android:text="9" />
+
+        <Button android:text="/" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button android:text="4" />
+
+        <Button android:text="5" />
+
+        <Button android:text="6" />
+
+        <Button android:text="*" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button android:text="1" />
+
+        <Button android:text="2" />
+
+        <Button android:text="3" />
+
+        <Button android:text="-" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button android:text="0" />
+
+        <Button android:text="." />
+
+        <Button android:text="+" />
+
+        <Button android:text="=" />
+    </TableRow>
+
+    <Button android:text="clear" />
+</TableLayout>

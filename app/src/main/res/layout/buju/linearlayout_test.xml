@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--
+        android:orientation="vertical"
+        vertical: 垂直
+        horizontal: 水平
+    -->
+    <!--
+        layout_weight,在其他元素摆好后根据占据剩余空间
+    -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="#ff0000"
+        android:text="hello"
+        android:textSize="28sp" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#00ff00"
+        android:text="hello"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0000ff"
+        android:text="hello"
+        android:textSize="28sp" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#ff0000"
+        android:text="屏幕正中"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/center"
+        android:layout_toLeftOf="@id/center"
+        android:background="#00ff00"
+        android:text="中偏左上"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/center"
+        android:layout_toRightOf="@id/center"
+        android:background="#00ff00"
+        android:text="中偏右上"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/center"
+        android:layout_toLeftOf="@id/center"
+        android:background="#00ff00"
+        android:text="中偏左下"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/center"
+        android:layout_toRightOf="@id/center"
+        android:background="#00ff00"
+        android:text="中偏右下"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/center"
+        android:background="#0000ff"
+        android:text="和中间上边线对齐" />
+</RelativeLayout>
